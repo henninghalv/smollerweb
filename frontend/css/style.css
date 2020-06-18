@@ -38,12 +38,12 @@ nav.non-mobile ul {
 }
 
 
-
 section {
     height: 100vh;
 }
 
-section.primary {
+section.primary,
+footer {
     background-color: var(--main-bg-color);
 }
 
@@ -61,6 +61,10 @@ section.secondary {
 .main-logo-container img {
     width: 70%;
     max-width: 400px;
+}
+
+footer {
+    height: 40vh;
 }
 
 /* Extra small devices (phones, 600px and down) */
