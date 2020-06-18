@@ -1,0 +1,50 @@
+/* Variables */
+
+:root {
+    --main-bg-color: #29203C;
+    --secondary-bg-color: #FCF2DD;
+    --main-button-color: #F8F8F8;
+    --main-text-color: #000000;
+}
+
+/* General styles, regardless of screen size */
+
+
+section {
+    height: 100vh;
+}
+
+section.primary {
+    background-color: var(--main-bg-color);
+}
+
+section.secondary {
+    background-color: var(--secondary-bg-color);
+}
+
+.main-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-logo-container img {
+    width: 70%;
+    max-width: 400px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
