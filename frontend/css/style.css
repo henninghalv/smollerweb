@@ -5,9 +5,38 @@
     --secondary-bg-color: #FCF2DD;
     --main-button-color: #F8F8F8;
     --main-text-color: #000000;
+    --main-text-font: 'Roboto', sans-serif;
 }
 
 /* General styles, regardless of screen size */
+
+nav a {
+    text-decoration: none;
+    font-family: var(--main-text-font);
+    font-size: 18;
+    font-weight: bold;
+    color: var(--main-text-color);
+}
+
+nav.non-mobile {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    background-color: var(--main-button-color);
+    width: 80%;
+    margin: 0 10%;
+}
+
+nav.non-mobile ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
 
 
 section {
@@ -41,7 +70,15 @@ section.secondary {
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    nav.mobile {
+        display: none;
+    }
+
+    nav.non-mobile {
+        display: flex;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
