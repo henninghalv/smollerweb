@@ -1,2 +1,2 @@
 # smollerweb
-The new website of S. Møller Storband. Med with vanilla html, css and js frontend, and Strapi backend.
+The new website of S. Møller Storband. Made with vanilla html, css and js frontend, and Strapi backend.
