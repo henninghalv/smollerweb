@@ -41,6 +41,19 @@
     </section>
     <section class="primary">
       <!-- Insert animation here -->
+      <div id="animation">
+      </div>
+      <script src="js/lottie.js"></script>
+      <script>
+        var animation = bodymovin.loadAnimation({
+          container: document.getElementById("animation"),
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: "js/smollerAnimation.json"
+        })
+      </script>
+      <!-- animation end -->
     </section>
     <section class="secondary text-section">
       <h3>Hvem er vi?</h3>
