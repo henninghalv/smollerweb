@@ -62,11 +62,13 @@ section.text-section {
 section.image-section {
   position: relative;
   height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 section.image-section img {
   display: block;
-  opacity: 0.3;
+  opacity: 0.2;
   width: 100%;
 }
 
@@ -75,11 +77,12 @@ section.image-section p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--main-bg-color);
-  width: 100%;
-  text-align: center;
-  font-weight: 900;
   margin: 0;
+  width: 100%;
+  color: var(--main-bg-color);
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
 }
 
 .main-logo-container {
@@ -112,6 +115,12 @@ footer .email-container {
   padding: 15px 5px;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+footer .email-container a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-weight: bold;
 }
 
 h3 {
