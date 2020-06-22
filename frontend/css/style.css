@@ -1,7 +1,7 @@
 /* Variables */
 
 :root {
-  --main-bg-color: #29203c;
+  --main-bg-color: #291f3b;
   --secondary-bg-color: #fcf2dd;
   --main-button-color: #f8f8f8;
   --main-text-color: #000000;
@@ -83,6 +83,11 @@ section.image-section p {
   font-weight: 900;
   font-style: italic;
   text-align: center;
+}
+
+#animation {
+  width: auto;
+  height: 100vh;
 }
 
 .main-logo-container {
