@@ -6,3 +6,5 @@ let animation = bodymovin.loadAnimation({
   autoplay: true,
   path: 'js/smollerAnimation.json',
 });
+
+document.getElementById('animation').style.display = 'flex';
