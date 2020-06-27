@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'Smoller';
+    src: url('./../assets/SmollerFont-webkit/SMOLLER.woff2') format('woff2'),
+        url('./../assets/SmollerFont-webkit/SMOLLER.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Roboto';
     src: url('./../assets/Roboto-webkit/Roboto-Black.woff2') format('woff2'),
         url('./../assets/Roboto-webkit/Roboto-Black.woff') format('woff');

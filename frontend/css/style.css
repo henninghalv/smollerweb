@@ -6,6 +6,7 @@
   --main-button-color: #f8f8f8;
   --main-text-color: #000000;
   --main-text-font: 'Roboto', sans-serif;
+  --header-text-font: 'Smoller', 'Roboto', sans-serif;
 }
 
 /* General styles, regardless of screen size */
@@ -19,7 +20,7 @@ body {
 nav a {
   text-decoration: none;
   color: var(--main-text-color);
-  font-size: 18pt;
+  font-size: 14pt;
   font-weight: bold;
 }
 
@@ -27,7 +28,7 @@ nav.non-mobile {
   display: none;
   z-index: 1;
   position: absolute;
-  top: 60px;
+  top: 40px;
   background-color: var(--main-button-color);
   width: 80%;
   margin: 0 10%;
@@ -41,10 +42,6 @@ nav.non-mobile ul {
   width: 100%;
   list-style-type: none;
   padding: 0;
-}
-
-section {
-  height: 100vh;
 }
 
 section.primary,
@@ -82,7 +79,7 @@ section.image-section p {
   margin: 0;
   width: 100%;
   color: var(--main-bg-color);
-  font-size: 16pt;
+  font-size: 24pt;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
   font-style: italic;
@@ -113,12 +110,13 @@ section.image-section p {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   height: 100%;
 }
 
 .main-logo-container img {
   width: 70%;
-  max-width: 500px;
+  max-width: 250px;
 }
 
 footer {
@@ -149,6 +147,7 @@ footer .email-container a {
 
 h3 {
   color: var(--main-bg-color);
+  font-family: var(--header-text-font);
   font-size: 32pt;
   font-weight: 900;
   text-align: center;
@@ -159,16 +158,16 @@ p {
   font-weight: 300;
 }
 
-p.primary-text {
-  margin: 0;
+.primary-text {
   color: var(--main-button-color);
 }
 
+.image {
+  width: 100%;
+}
+
 section.blog-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 10%;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -184,20 +183,28 @@ section.blog-section {
   nav.non-mobile {
     display: flex;
   }
+
+  .main-logo-container img {
+    max-width: 350px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   h3 {
-    font-size: 48pt;
+    font-size: 42pt;
   }
 
   p {
-    font-size: 24pt;
+    font-size: 20pt;
   }
 
   section.image-section p {
     font-size: 32pt;
+  }
+
+  section.text-section {
+    padding: 10% 15%;
   }
 }
 
