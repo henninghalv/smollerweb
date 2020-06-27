@@ -149,7 +149,7 @@ footer .email-container a {
 
 footer .social-container {
   display: flex;
-  width: 150px;
+  width: 200px;
   justify-content: space-evenly;
 }
 
@@ -162,7 +162,7 @@ footer .social-container a {
 h3 {
   color: var(--main-bg-color);
   font-family: var(--header-text-font);
-  font-size: 32pt;
+  font-size: 24pt;
   font-weight: 900;
   text-align: center;
 }
