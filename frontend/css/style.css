@@ -15,6 +15,7 @@ html,
 body {
   font-family: var(--main-text-font);
   color: var(--main-text-color);
+  scroll-behavior: smooth;
 }
 
 nav a {
@@ -120,10 +121,11 @@ section.image-section p {
 }
 
 footer {
-  height: 40vh;
+  min-height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 footer .email-container {
@@ -143,6 +145,18 @@ footer .email-container a {
   text-decoration: none;
   color: var(--main-text-color);
   font-weight: bold;
+}
+
+footer .social-container {
+  display: flex;
+  width: 150px;
+  justify-content: space-evenly;
+}
+
+footer .social-container a {
+  font-size: 24pt;
+  color: var(--main-button-color);
+  text-decoration: none;
 }
 
 h3 {
