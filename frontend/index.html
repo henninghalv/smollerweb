@@ -18,7 +18,16 @@
   <body>
     <!-- Content on the page should be Norwegian, code should be English -->
     <!-- Navigation -->
-    <nav class="mobile"></nav>
+    <a id="openMobile" class="fa fa-bars mobile-open" onclick="openMobileNav()"></a>
+    <a id="closeMobile" class="fa fa-close mobile-close" onclick="closeMobileNav()"></a>
+    <nav id="mobileNavBar" class="mobile">
+      <ul>
+        <li><a href="#about" onclick="closeMobileNav()">OM</a></li>
+        <li><a href="#projects" onclick="closeMobileNav()">PROSJEKTER</a></li>
+        <li><a href="#recruitment" onclick="closeMobileNav()">OPPTAK</a></li>
+        <li><a href="#contact" onclick="closeMobileNav()">KONTAKT</a></li>
+      </ul>
+    </nav>
     <nav class="non-mobile">
       <ul>
         <li><a href="#about">OM</a></li>
@@ -29,11 +38,11 @@
     </nav>
     <section class="primary">
       <div class="main-logo-container">
-        <img src="assets/smoller_logo.svg" alt="S. Møller Storband logo" />
+        <img src="assets/images/smoller_logo.svg" alt="S. Møller Storband logo" />
       </div>
     </section>
     <section class="secondary image-section">
-      <img src="assets/cover5.JPG" alt="S. Møller Storband spiller til dans i Storsalen" />
+      <img src="assets/images/cover5.JPG" alt="S. Møller Storband spiller til dans i Storsalen" />
       <p>
         Storbandmusikk av yppertste kvalitet. <br />
         Spiller opp til dans på ditt arrangement!
@@ -43,7 +52,10 @@
       <div id="animation"></div>
       <noscript>
         <div id="non-animation">
-          <img src="assets/smoller_band.svg" alt="Tegning av musikerne i S. Møller Storband" />
+          <img
+            src="assets/images/smoller_band.svg"
+            alt="Tegning av musikerne i S. Møller Storband"
+          />
         </div>
       </noscript>
     </section>
@@ -67,7 +79,7 @@
       </p>
     </section>
     <section>
-      <img class="image" src="assets/cover2.jpg" alt="S. Møller Storband som har det gøy" />
+      <img class="image" src="assets/images/cover2.jpg" alt="S. Møller Storband som har det gøy" />
     </section>
     <!-- Blog posts section -->
     <section id="projects" class="primary blog-section require-js">
@@ -91,7 +103,11 @@
       </p>
       <div id="recruitment"></div>
     </section>
-    <img class="image" src="assets/smoller_fun.jpg" alt="S. Møller Storband som har det gøy" />
+    <img
+      class="image"
+      src="assets/images/smoller_fun.jpg"
+      alt="S. Møller Storband som har det gøy"
+    />
     <footer id="contact">
       <h4 class="primary-text">Kontakt oss</h4>
       <div class="email-container"><a href="mailto:post@smoller.no">post@smoller.no</a></div>

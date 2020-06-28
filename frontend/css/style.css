@@ -25,6 +25,51 @@ nav a {
   font-weight: bold;
 }
 
+.mobile-open,
+.mobile-close {
+  display: none;
+  font-size: 24pt;
+  text-decoration: none;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.mobile-open {
+  color: var(--main-button-color);
+}
+
+.mobile-close {
+  color: var(--main-bg-color);
+  z-index: 2;
+}
+
+nav.mobile {
+  position: absolute;
+  z-index: 1;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--main-button-color);
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+nav.mobile ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.mobile ul li {
+  display: flex;
+  align-items: center;
+  margin: 0px 40px 15px;
+  height: 32px;
+}
+
 nav.non-mobile {
   display: none;
   z-index: 1;
