@@ -9,16 +9,19 @@ let animation = bodymovin.loadAnimation({
 
 // If JS is enabled, these become visible
 document.getElementById('animation').style.display = 'flex';
-document.getElementById('openMobile').style.display = 'block';
+document.getElementById('hamburger').style.display = 'block';
 
-function openMobileNav() {
-  document.getElementById('openMobile').style.display = 'none';
-  document.getElementById('closeMobile').style.display = 'block';
-  document.getElementById('mobileNavBar').style.display = 'flex';
-}
-
-function closeMobileNav() {
-  document.getElementById('openMobile').style.display = 'block';
-  document.getElementById('closeMobile').style.display = 'none';
-  document.getElementById('mobileNavBar').style.display = 'none';
+function toggleMobileNav(hamburger) {
+  hamburger.classList.toggle('change');
+  if (hamburger.classList.contains('change')) {
+    document.getElementById('mobileNavBar').style.display = 'flex';
+    document.querySelectorAll('.hamburger-bar').forEach((bar) => {
+      bar.style.backgroundColor = '#291f3b';
+    });
+  } else {
+    document.getElementById('mobileNavBar').style.display = 'none';
+    document.querySelectorAll('.hamburger-bar').forEach((bar) => {
+      bar.style.backgroundColor = '#f8f8f8';
+    });
+  }
 }

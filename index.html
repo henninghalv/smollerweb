@@ -18,14 +18,17 @@
   <body>
     <!-- Content on the page should be Norwegian, code should be English -->
     <!-- Navigation -->
-    <a id="openMobile" class="fa fa-bars mobile-open mobile" onclick="openMobileNav()"></a>
-    <a id="closeMobile" class="fa fa-close mobile-close mobile" onclick="closeMobileNav()"></a>
+    <div id="hamburger" class="hamburger-container mobile" onclick="toggleMobileNav(this)">
+      <div class="hamburger-bar1 hamburger-bar"></div>
+      <div class="hamburger-bar2 hamburger-bar"></div>
+      <div class="hamburger-bar3 hamburger-bar"></div>
+    </div>
     <nav id="mobileNavBar" class="mobile">
       <ul>
-        <li><a href="#about" onclick="closeMobileNav()">OM</a></li>
-        <li><a href="#projects" onclick="closeMobileNav()">PROSJEKTER</a></li>
-        <li><a href="#recruitment" onclick="closeMobileNav()">OPPTAK</a></li>
-        <li><a href="#contact" onclick="closeMobileNav()">KONTAKT</a></li>
+        <li><a href="#about">OM</a></li>
+        <li><a href="#projects">PROSJEKTER</a></li>
+        <li><a href="#recruitment">OPPTAK</a></li>
+        <li><a href="#contact">KONTAKT</a></li>
       </ul>
     </nav>
     <nav class="non-mobile">
@@ -126,8 +129,9 @@
             <a
               href="https://open.spotify.com/artist/19L5xlYXrhgqfsD245ppJv?si=YdICMj9RRy-Kv26qAN3YGg"
               target="_blank"
-              >Spotify</a
             >
+              Spotify
+            </a>
             og andre strømmetjenester.
           </p>
         </div>
