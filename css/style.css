@@ -133,11 +133,23 @@ nav.non-mobile {
 nav.non-mobile ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   list-style-type: none;
   padding: 0;
   margin: 10px;
+}
+
+.evenly-like {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.evenly-like:before,
+.evenly-like:after {
+  content: '';
+  display: block;
+  width: 2px;
 }
 
 section.primary,
@@ -262,7 +274,7 @@ section.image-section p {
 
 .photo-collage img {
   flex: 1 0 42%; /* explanation below */
-  max-width: 500px;
+  max-width: 520px;
   width: 40%;
   margin: 5px;
   border: solid 5px black;
@@ -308,7 +320,7 @@ footer .social-container,
 footer .photo-credit {
   display: flex;
   width: 200px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 footer .social-container a {
@@ -319,6 +331,8 @@ footer .social-container a {
 
 footer .photo-credit {
   margin-top: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 footer .photo-credit a {
