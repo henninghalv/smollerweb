@@ -232,6 +232,10 @@ section.image-section p {
   margin-bottom: 50px;
 }
 
+.project-container .project-text .project-description a {
+  color: var(--white-color);
+}
+
 footer {
   min-height: 40vh;
   height: 100vh;
