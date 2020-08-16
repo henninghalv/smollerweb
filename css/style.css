@@ -75,11 +75,12 @@ nav a {
 }
 
 .change .hamburger-bar1 {
-  -webkit-transform: rotate(-45deg) translate(-8px, 7px);
-  transform: rotate(-45deg) translate(-8px, 7px);
-  -moz-transform: rotate(-45deg) translate(-8px, 7px);
-  -ms-transform: rotate(-45deg) translate(-8px, 7px);
-  -o-transform: rotate(-45deg) translate(-8px, 7px);
+  /* Magic numbers to align X in hamburger menu */
+  transform: rotate(-45deg) translate(-7.1px, 7.5px);
+  -webkit-transform: rotate(-45deg) translate(-7.1px, 7.5px);
+  -moz-transform: rotate(-45deg) translate(-7.1px, 7.5px);
+  -ms-transform: rotate(-45deg) translate(-7.1px, 7.5px);
+  -o-transform: rotate(-45deg) translate(-7.1px, 7.5px);
 }
 
 .change .hamburger-bar2 {
@@ -89,6 +90,7 @@ nav a {
 .change .hamburger-bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+  width: 35.5px; /* Magic number to align X in hamburger menu */
 }
 
 nav.mobile {
