@@ -250,6 +250,24 @@ section.image-section p {
   color: var(--white-color);
 }
 
+.photo-collage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--secondary-color);
+}
+
+.photo-collage img {
+  flex: 1 0 42%; /* explanation below */
+  max-width: 500px;
+  width: 40%;
+  margin: 5px;
+}
+
+.photo-collage #boringPhoto {
+  display: none;
+}
+
 footer {
   min-height: 40vh;
   height: 100vh;
@@ -345,6 +363,17 @@ footer .photo-credit a {
 
   .project-container .project-text {
     width: 40%;
+  }
+
+  .photo-collage img {
+    flex: 1 0 31%; /* explanation below */
+    max-width: 500px;
+    width: 30%;
+    margin: 5px;
+  }
+
+  .photo-collage #boringPhoto {
+    display: block;
   }
 }
 
