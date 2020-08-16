@@ -212,10 +212,12 @@ section.image-section p {
 }
 
 .project-container .project-text h4 {
+  color: var(--white-color);
   margin-bottom: 0;
 }
 
 .project-container .project-text .project-description {
+  color: var(--white-color);
   font-size: 14pt;
 }
 
