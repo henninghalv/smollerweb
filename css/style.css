@@ -262,6 +262,8 @@ section.image-section p {
   max-width: 500px;
   width: 40%;
   margin: 5px;
+  border: solid 5px black;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.25);
 }
 
 .photo-collage #boringPhoto {
