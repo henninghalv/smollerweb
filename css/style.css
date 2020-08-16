@@ -255,6 +255,7 @@ section.image-section p {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: var(--secondary-color);
+  justify-content: center;
 }
 
 .photo-collage img {
@@ -368,8 +369,8 @@ footer .photo-credit a {
   }
 
   .photo-collage img {
-    flex: 1 0 31%; /* explanation below */
-    max-width: 500px;
+    flex: 1 0 30%; /* explanation below */
+    max-width: 600px;
     width: 30%;
     margin: 5px;
   }
